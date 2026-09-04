@@ -1,0 +1,68 @@
+name: Validate Part 1 Planning Documents
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  validate-docs:
+    name: Check required Part 1 files
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Verify docs folder exists
+        run: |
+          echo "Checking if /docs folder exists..."
+          if [ -d "docs" ]; then
+            echo "docs folder found"
+          else
+            echo "ERROR: docs folder is missing"
+            exit 1
+          fi
+
+      - name: Check ERD file (PNG or PDF)
+        run: |
+          echo "Looking for ERD file..."
+          if [ -f "docs/RaceDay_ERD.png" ] || [ -f "docs/RaceDay_ERD.pdf" ]; then
+            echo "ERD file found"
+          else
+            echo "ERROR: RaceDay_ERD.png or RaceDay_ERD.pdf is missing"
+            exit 1
+          fi
+
+      - name: Check API Endpoint Plan
+        run: |
+          echo "Looking for API Endpoint Plan..."
+          if [ -f "docs/API_Endpoint_Plan.md" ] || [ -f "docs/API_Endpoint_Plan.pdf" ]; then
+            echo "API Endpoint Plan found"
+          else
+            echo "ERROR: API_Endpoint_Plan.md or .pdf is missing"
+            exit 1
+          fi
+
+      - name: Check SQL Script
+        run: |
+          echo "Looking for SQL script..."
+          if [ -f "docs/RaceDay_Schema_and_Seed.sql" ]; then
+            echo "SQL script found"
+          else
+            echo "ERROR: RaceDay_Schema_and_Seed.sql is missing"
+            exit 1
+          fi
+
+      - name: List all files in docs folder
+        run: |
+          echo "Contents of the docs folder:"
+          ls -la docs/
+
+      - name: Final success message
+        run: |
+          echo "========================================="
+          echo "All Part 1 planning artefacts are present"
+          echo "ERD + Endpoint Plan + SQL Script verified"
+          echo "========================================="
