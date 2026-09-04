@@ -14,7 +14,7 @@ GO
 USE RaceDay;
 GO
 
--- 1. Users (both Organiser and Participant)
+-- 1. Users (Organiser and Participant)
 CREATE TABLE [User] (
     UserId          INT IDENTITY(1,1) PRIMARY KEY,
     Email           NVARCHAR(256) NOT NULL UNIQUE,
