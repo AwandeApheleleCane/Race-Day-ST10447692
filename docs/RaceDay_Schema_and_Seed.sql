@@ -99,10 +99,6 @@ CREATE TABLE RefreshToken (
 );
 GO
 
-------------------------------------------------------------
--- Seed data (realistic South African events)
-------------------------------------------------------------
-
 -- Two Organisers
 INSERT INTO [User] (Email, PasswordHash, FirstName, LastName, Role)
 VALUES 
