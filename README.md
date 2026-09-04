@@ -1,6 +1,6 @@
 # Race-Day-ST10447692
 Portfolio of Evidence (PoE) PART 1 (ASSIGNMENT 1) PROG6212w SEMESTER 2 T2
-# RaceDay – Part 1: System Planning and Databas
+# RaceDay – Part 1: System Planning and Database
 
 ## Short Description
 RaceDay is a full-stack web-based event management system designed for the South African road running, walking, and cycling community.  
