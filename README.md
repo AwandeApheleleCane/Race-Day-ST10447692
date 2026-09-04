@@ -37,7 +37,7 @@ A GitHub Actions workflow has been configured to validate that all required Part
 
 ## Video Presentation
 Watch the Part 1 walkthrough video here:  
-[Part 1 Video – RaceDay Planning & Database](https://youtu.be/YOUR_VIDEO_LINK_HERE)
+[Part 1 Video – RaceDay Planning & Database](https://youtu.be/_3KBAdNk4aU)
 
 ## How to Run the SQL Script
 1. Open SQL Server Management Studio (SSMS)
