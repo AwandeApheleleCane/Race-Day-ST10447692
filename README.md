@@ -50,3 +50,68 @@ Watch the Part 1 walkthrough video here:
 **Student:** Awande Aphelele Cane  
 **Module:** PROG6212w  
 **Part:** 1 of 3
+# RaceDay API – Part 2
+
+## Description
+RaceDay is a full-stack event management system for South African road running, walking and cycling events.  
+This repository contains **Part 2**: the complete RESTful API built with ASP.NET Core, Entity Framework Core (Code-First), and session-based (cookie) authentication.
+
+## User Roles
+
+- **Organiser**  
+  Can create, update and delete events, manage categories, view all enrolments for their events, and capture results.
+
+- **Participant**  
+  Can register, browse events and categories, enrol in an event by selecting a category, view their own enrolments, and view their personal results.
+
+## Technologies Used
+- ASP.NET Core Web API
+- Entity Framework Core (Code-First)
+- SQL Server
+- Cookie Authentication (Session-based)
+- Role-based Authorization
+- Swagger / OpenAPI
+- xUnit Unit Tests
+- GitHub Actions CI/CD
+
+## Setup & Run Instructions
+
+1. Clone the repository
+2. Open the solution in Visual Studio 2022
+3. Update the connection string in `appsettings.json` if needed
+4. Open Package Manager Console and run:
+   5. Press F5 to run the API
+6. Open Swagger UI at: `https://localhost:7xxx/swagger`
+
+## Testing the API
+All endpoints can be tested directly in Swagger:
+1. Register a new Organiser and a Participant
+2. Login (session cookie is set automatically)
+3. Create an Event (must include Distance and EventType)
+4. Add Categories
+5. Enrol as a Participant
+6. Capture Results as an Organiser
+
+## Unit Tests
+Unit tests cover:
+- User registration and login (success and failure)
+- Role-based access (Organiser vs Participant)
+- Event management
+- Enrolments
+
+Run tests in Visual Studio via **Test Explorer** or with:
+## CI/CD
+GitHub Actions automatically builds the project and runs all unit tests on every push.
+
+**Successful green build:**
+
+![CI/CD Green Build](docs/ci-cd-part2-green.png)
+
+## Video Presentation
+Watch the Part 2 demonstration video here:  
+[RaceDay Part 2 – API Walkthrough](https://youtu.be/YOUR_UNLISTED_VIDEO_LINK)
+
+## Student Details
+- Name: [Awande Aphelele Cane]
+- Student Number: [ST10447692]
+- Module: [PROG6212w]
