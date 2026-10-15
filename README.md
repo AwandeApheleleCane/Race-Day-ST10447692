@@ -112,6 +112,6 @@ Watch the Part 2 demonstration video here:
 [RaceDay Part 2 – API Walkthrough](https://youtu.be/YOUR_UNLISTED_VIDEO_LINK)
 
 ## Student Details
-- Name: [Awande Aphelele Cane]
+- Name: Awande Aphelele Cane
 - Student Number: [ST10447692]
 - Module: [PROG6212w]
