@@ -27,3 +27,4 @@ jobs:
 
     - name: Run Unit Tests
       run: dotnet test --no-build --configuration Release --verbosity normal
+      Add GitHub Actions workflow for build and test
