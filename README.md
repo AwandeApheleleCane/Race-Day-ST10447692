@@ -105,7 +105,7 @@ GitHub Actions automatically builds the project and runs all unit tests on every
 
 **Successful green build:**
 
-![CI/CD Green Build](docs/CICD Green Build.png)
+![CI/CD Green Build](docs/Greenbuild.png)
 
 ## Video Presentation
 Watch the Part 2 demonstration video here:  
