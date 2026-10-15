@@ -109,7 +109,7 @@ GitHub Actions automatically builds the project and runs all unit tests on every
 
 ## Video Presentation
 Watch the Part 2 demonstration video here:  
-[RaceDay Part 2 – API Walkthrough](https://youtu.be/YOUR_UNLISTED_VIDEO_LINK)
+[RaceDay Part 2 – API Walkthrough](https://youtu.be/h02BBER1Uuc?si=qM10rdbtOhrLJq0l)
 
 ## Student Details
 - Name: Awande Aphelele Cane
