@@ -113,5 +113,5 @@ Watch the Part 2 demonstration video here:
 
 ## Student Details
 - Name: Awande Aphelele Cane
-- Student Number: [ST10447692
+- Student Number: ST10447692
 - Module: [PROG6212w]
